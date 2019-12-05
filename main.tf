@@ -137,6 +137,7 @@ resource "aws_instance" "hashicat" {
     Name = "${var.prefix}-hashicat-instance"
     Env = "testing"
     owner = "kcorbin"
+    ttl = 60
   }
 }
 
